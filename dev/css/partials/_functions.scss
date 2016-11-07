@@ -1,0 +1,85 @@
+@mixin transition {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+@mixin center-child {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin clearfix {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+@mixin transformCenter {
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@mixin bgr-img {
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin container-make($prefix:''){
+  .container {
+    position: relative;
+    @include center-child;
+    @if ($prefix=='xl'){
+      width:map-get($breakpoints,$prefix);
+    } @else if ($prefix=='lg'){
+        width:map-get($breakpoints,$prefix);
+    } @else {
+        width: auto;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+  }
+}
+
+@mixin make-columns($prefix:'') {
+  @if($prefix!='') {
+    $prefix: "-#{$prefix}";
+  }
+  @for $i from 1 through $columns {
+    .col#{$prefix}-#{$i}{
+      width: percentage($i/$columns);
+    }
+  }
+}
+
+@mixin make-rows {
+  [class*='col-'] {
+    float: left;
+  }
+  .grid {
+    overflow: hidden;
+  }
+  .row {
+    &:after {
+      @include clearfix;
+    }
+    &.gutters {
+      margin-left: -($column-gutter / 2);
+      margin-right: -($column-gutter / 2);
+      &>[class*='col-'] {
+        padding-left: ($column-gutter / 2);
+        padding-right: ($column-gutter / 2);
+      }
+    }
+  }
+}
