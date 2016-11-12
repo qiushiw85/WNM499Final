@@ -1,0 +1,22 @@
+$columns:12;
+$column-gutter:1em;
+
+$breakpoints: (
+  xs:0,
+  sm:420px,
+  md:800px,
+  lg:1000px,
+  xl:1200px,
+);
+
+$positions-map: (
+  t: top,
+  r: right,
+  b: bottom,
+  l: left,
+);
+
+$boxes-map: (
+  p: padding,
+  m: margin,
+);

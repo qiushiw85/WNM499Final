@@ -1,0 +1,7 @@
+@include make-rows();
+@each $prefix,$value in $breakpoints {
+  @media (min-width: $value) {
+    @include container-make($prefix);
+    @include make-columns($prefix);
+  }
+}
