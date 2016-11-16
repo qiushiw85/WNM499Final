@@ -1,0 +1,42 @@
+.categories-container {
+  padding-top: 2rem;
+}
+.categories-title {
+  font-family: 'Brandon';
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.25rem;
+  padding-left: 1rem;
+}
+
+.categories-subtitle {
+  padding-left: 1rem;
+  font-size: 1rem;
+  color: rgb(140,140,140);
+}
+
+.categories-drinks {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  padding: 1rem;
+}
+
+.drink-container {
+  width: 10rem;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  & + .drink-container {
+    margin-left: 0.5rem;
+  }
+}
+
+.drink-name {
+  font-family: 'Brandon';
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+}
