@@ -2,7 +2,6 @@
 
 Chloe Park - https://github.com/misschloe/WNM499Final.git
 
-test
 
 Noelle Giebe - https://github.com/noellegiebe/WNM499Final.git
 
