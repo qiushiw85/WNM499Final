@@ -13,12 +13,12 @@
     <div class="categories-title">American Classics</div>
     <div class="categories-subtitle">Some of our personal favorites</div>
     <div class="categories-drinks">
-      <div class="drink-container" style="background-color:#AD8C6F">
+      <a href="drink1.php" class="drink-container" style="background-color:#AD8C6F">
         <div class="drink-img">
           <img src="images/coffeesvgs/Artboard 1.svg" alt="" />
         </div>
         <div class="drink-name">Machiato</div>
-      </div>
+      </a>
       <div class="drink-container" style="background-color:#FDCCAA">
         <div class="drink-img">
           <img src="images/coffeesvgs/Artboard 2.svg" alt="" />

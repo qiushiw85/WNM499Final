@@ -40,3 +40,40 @@
   letter-spacing: 0.1em;
   font-size: 0.75rem;
 }
+
+.card-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.card-name {
+  font-family: 'Brandon';
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.ingredients-list {
+  padding-left: 0;
+  li {
+    list-style: none;
+  }
+}
+
+.steps-list {
+  padding-left: 0;
+  font-family: 'Brandon';
+  li {
+    list-style: none;
+  }
+}
+
+.card-img {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  transform: translateY(-5rem);
+}
