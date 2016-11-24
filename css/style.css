@@ -26,9 +26,9 @@ body {
   border-radius: 10px 10px 10px 10px;
 }
 .machine_center { 
-  background: #E50C26;
+  background: #BFA66F;
   position: absolute;
-  width: 180px;
+  width: 185px;
   height: 160px;
   border-radius: 10px 10px 0px 0px;
 }
@@ -37,13 +37,13 @@ body {
   position: absolute;
   left: -4px;
   top: 160px;
-  width: 190px;
+  width: 193px;
   height: 10px;
   border-radius: 10px 10px 5px 5px;
 }
 .machine_line {
   position: absolute;
-  width: 180px;
+  width: 185px;
   height: 20px;
   top: 20px;
   border-top: 8px solid #EDEDED;
@@ -55,10 +55,10 @@ body {
   width: 58px;
   height: 150px;
   border-radius: 20px 20px 5px 5px;
-  border: 5px solid #8C0E0E;
+  border: 5px solid #755D2C;
 }
 .machine_maker_outer {
-  background: #515151;
+  background: #85837F;
   position: absolute;
   left: 64px;
   top: 5px;
@@ -69,7 +69,7 @@ body {
   border-bottom: 0px;
 }
 .machine_prop {
-  background: #D30D2E;
+  background: #BFA66F;
   position: absolute;
   left: 62px;
   top: 133px;
@@ -114,7 +114,7 @@ body {
 
 /* Coffee */
 .coffee { 
-  background: #532D00;
+  background: #7A522E;
   position: absolute;
   top: 110px;
   left: 74px;
@@ -123,7 +123,7 @@ body {
   border-radius: 0px 0px 5px 5px;
 }
 .coffee_drop {
-  background: #532D00;
+  background: #7A522E;
   position: absolute;
   top: 20px;
   left: 90px;
@@ -135,7 +135,7 @@ body {
 
 .coffee_animation_01, 
 .coffee_animation_02 { 
-  background: #532D00;
+  background: #7A522E;
   position: absolute;
   top: 107px;
   left: 74px;
@@ -162,7 +162,7 @@ body {
 }
 
 @keyframes light {
-  from {background-color: #16866D;}
+  from {background-color: #F4F2AD;}
   to {background-color: #000;}
 }
 
