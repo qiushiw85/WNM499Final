@@ -4,16 +4,29 @@ $filename = "data/drinks.json";
 $file = file_get_contents($filename);
 $data = json_decode($file);
 
-function showDrinks($id){
-  global $data;
+$americanClassics = array_filter($data, function($obj){return $obj->drinkCategory == "American Classics";});
+$darkBurst = array_filter($data, function($obj){return $obj->drinkCategory == "Dark Burst";});
+
+$darkBurstEncoded = json_encode($darkBurst);
+
+function showDrinks($id,$category){
   return "
-    <a href='?id=$id' class='drink-container' style='background-color:#AD8C6F'>
+    <a href='?id=$id' class='drink-container' style='background-color:{$category[$id]->drinkBgrColor}'>
       <div class='drink-img'>
-        <img src='images/coffeesvgs/{$data[$id]->drinkImg}' alt='' />
+        <img src='images/coffeesvgs/{$category[$id]->drinkImg}' alt='' />
       </div>
-      <div class='drink-name'>{$data[$id]->drinkName}</div>
+      <div class='drink-name'>{$category[$id]->drinkName}</div>
     </a>";
     }
+
+function showCategories($category) {
+  $total = count($category);
+  for($i=0; $i<$total; $i++) {
+    if (empty($category[$i])) {$total++;}
+    else {echo showDrinks($i,$category);}
+  }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -31,53 +44,14 @@ function showDrinks($id){
     <div class="categories-title">American Classics</div>
     <div class="categories-subtitle">Some of our personal favorites</div>
     <div class="categories-drinks">
-      <?php
-        for($i=0; $i<count($data); $i++) {
-          echo showDrinks($i);
-        }
-      ?>
+      <?php echo showCategories($americanClassics);?>
     </div>
   </div>
   <div class="categories-container">
     <div class="categories-title">Dark Burst</div>
     <div class="categories-subtitle">Our strongest recommendations for strongest drinkers</div>
     <div class="categories-drinks">
-      <div class="drink-container" style="background-color:#FDCCAA">
-        <div class="drink-img">
-          <img src="images/coffeesvgs/Artboard 2.svg" alt="" />
-        </div>
-        <div class="drink-name">Machiato</div>
-      </div>
-      <div class="drink-container" style="background-color:#B7DBA5">
-        <div class="drink-img">
-          <img src="images/coffeesvgs/Artboard 5.svg" alt="" />
-        </div>
-        <div class="drink-name">Machiato</div>
-      </div>
-      <div class="drink-container" style="background-color:#F4F2AD">
-        <div class="drink-img">
-          <img src="images/coffeesvgs/Artboard 6.svg" alt="" />
-        </div>
-        <div class="drink-name">Machiato</div>
-      </div>
-      <div class="drink-container" style="background-color:#F69D9D">
-        <div class="drink-img">
-          <img src="images/coffeesvgs/Artboard 3.svg" alt="" />
-        </div>
-        <div class="drink-name">Machiato</div>
-      </div>
-        <div class="drink-container" style="background-color:#AD8C6F">
-          <div class="drink-img">
-            <img src="images/coffeesvgs/Artboard 1.svg" alt="" />
-          </div>
-          <div class="drink-name">Machiato</div>
-        </div>
-      <div class="drink-container" style="background-color:#AEBDE1">
-        <div class="drink-img">
-          <img src="images/coffeesvgs/Artboard 4.svg" alt="" />
-        </div>
-        <div class="drink-name">Machiato</div>
-      </div>
+      <?php echo showCategories($darkBurst);?>
     </div>
   </div>
 </body>

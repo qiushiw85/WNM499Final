@@ -2,6 +2,7 @@
   {
     "drinkName":"Machiato",
     "drinkCategory":"American Classics",
+    "drinkBgrColor":"#AD8C6F",
     "ingredients": [
       {"ingredient": "vanilla syrup", "qty":"1 tsp"},
       {"ingredient": "espresso", "qty":"1 shot"},
@@ -20,6 +21,7 @@
   {
     "drinkName":"Cappucino",
     "drinkCategory":"American Classics",
+    "drinkBgrColor":"#AD8C6F",
     "ingredients": [
       {"ingredient": "vanilla syrup", "qty":"1 tsp"},
       {"ingredient": "espresso", "qty":"1 shot"},
@@ -37,7 +39,8 @@
   },
   {
     "drinkName":"Espresso",
-    "drinkCategory":"American Classics",
+    "drinkCategory":"Dark Burst",
+    "drinkBgrColor":"#AD8C6F",
     "ingredients": [
       {"ingredient": "vanilla syrup", "qty":"1 tsp"},
       {"ingredient": "espresso", "qty":"1 shot"},
