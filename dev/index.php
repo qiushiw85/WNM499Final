@@ -1,3 +1,21 @@
+<?php
+
+$filename = "data/drinks.json";
+$file = file_get_contents($filename);
+$data = json_decode($file);
+
+function showDrinks($id){
+  global $data;
+  return "
+    <a href='?id=$id' class='drink-container' style='background-color:#AD8C6F'>
+      <div class='drink-img'>
+        <img src='images/coffeesvgs/{$data[$id]->drinkImg}' alt='' />
+      </div>
+      <div class='drink-name'>{$data[$id]->drinkName}</div>
+    </a>";
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,42 +31,11 @@
     <div class="categories-title">American Classics</div>
     <div class="categories-subtitle">Some of our personal favorites</div>
     <div class="categories-drinks">
-      <a href="drink1.php" class="drink-container" style="background-color:#AD8C6F">
-        <div class="drink-img">
-          <img src="images/coffeesvgs/Artboard 1.svg" alt="" />
-        </div>
-        <div class="drink-name">Machiato</div>
-      </a>
-      <div class="drink-container" style="background-color:#FDCCAA">
-        <div class="drink-img">
-          <img src="images/coffeesvgs/Artboard 2.svg" alt="" />
-        </div>
-        <div class="drink-name">Machiato</div>
-      </div>
-      <div class="drink-container" style="background-color:#F69D9D">
-        <div class="drink-img">
-          <img src="images/coffeesvgs/Artboard 3.svg" alt="" />
-        </div>
-        <div class="drink-name">Machiato</div>
-      </div>
-      <div class="drink-container" style="background-color:#AEBDE1">
-        <div class="drink-img">
-          <img src="images/coffeesvgs/Artboard 4.svg" alt="" />
-        </div>
-        <div class="drink-name">Machiato</div>
-      </div>
-      <div class="drink-container" style="background-color:#B7DBA5">
-        <div class="drink-img">
-          <img src="images/coffeesvgs/Artboard 5.svg" alt="" />
-        </div>
-        <div class="drink-name">Machiato</div>
-      </div>
-      <div class="drink-container" style="background-color:#F4F2AD">
-        <div class="drink-img">
-          <img src="images/coffeesvgs/Artboard 6.svg" alt="" />
-        </div>
-        <div class="drink-name">Machiato</div>
-      </div>
+      <?php
+        for($i=0; $i<count($data); $i++) {
+          echo showDrinks($i);
+        }
+      ?>
     </div>
   </div>
   <div class="categories-container">
