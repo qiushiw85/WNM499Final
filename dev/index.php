@@ -8,11 +8,6 @@ $categoriesFilename = "data/categories.json";
 $categoriesFile = file_get_contents($categoriesFilename);
 $categoriesData = json_decode($categoriesFile);
 
-$americanClassics = array_filter($data, function($obj){return $obj->drinkCategory == "American Classics";});
-$darkBurst = array_filter($data, function($obj){return $obj->drinkCategory == "Dark Burst";});
-
-$categories = [$americanClassics,$darkBurst];
-
 function showDrinks($id,$category){
   return "
     <a href='?id=$id' class='drink-container' style='background-color:{$category[$id]->drinkBgrColor}'>
@@ -22,7 +17,9 @@ function showDrinks($id,$category){
       <div class='drink-name'>{$category[$id]->drinkName}</div>
     </a>";
 }
-function showCategories($category) {
+function showCategories($category_name) {
+  global $data;
+  $category = array_filter($data, function($obj) use ($category_name){return $obj->drinkCategory == $category_name;});
   $total = count($category);
   for($i=0; $i<$total; $i++) {
     if (empty($category[$i])) {$total++;}
@@ -87,7 +84,7 @@ function showDrinkDetail($drink) {
         <div class="categories-title"><?php echo $categoriesData[$i]->categoryName ?></div>
         <div class="categories-subtitle"><?php echo $categoriesData[$i]->categoryDes ?></div>
         <div class="categories-drinks">
-          <?php echo showCategories($categories[$i]);?>
+          <?php echo showCategories($categoriesData[$i]->categoryName);?>
         </div>
       </div>
     <?php
