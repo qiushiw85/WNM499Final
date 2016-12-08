@@ -10,7 +10,7 @@ $categoriesData = json_decode($categoriesFile);
 
 function showDrinks($id,$category){
   return "
-    <a href='?id=$id' class='drink-container' style='background-color:{$category[$id]->drinkBgrColor}'>
+    <a href='?id=$id' data-id='$id' class='drink-container' style='background-color:{$category[$id]->drinkBgrColor}'>
       <div class='drink-img'>
         <img src='images/coffeesvgs/{$category[$id]->drinkImg}' alt='' />
       </div>
@@ -29,36 +29,53 @@ function showCategories($category_name) {
 function showDrinkDetail($drink) {
   $currentID=$_GET['id'];
   ?>
-    <body style="background-color:rgb(20,20,20)">
+    <!-- <body style="background-color:rgb(20,20,20)"> -->
       <div class="card-container" style="background-color:<?php echo $drink->drinkBgrColor?>">
         <div class="card-name"><?php echo $drink->drinkName?></div>
-        <div class="ingredients-container">
-          <ul class="ingredients-list">
-            <?php
-            $ingredients = $drink->ingredients;
-              for ($i=0; $i<count($ingredients); $i++) {
-                echo "<li>".$ingredients[$i]->qty." <span class='uppercase'>".$ingredients[$i]->ingredient."</span></li>";
-              }
-            ?>
-          </ul>
-        </div>
-        <div class="steps-container">
-          <ul class="steps-list">
-            <?php
-            $steps = $drink->steps;
-              for ($i=0; $i<count($steps); $i++) {
-                echo "<li>".$steps[$i]->step."</li>";
-              }
-            ?>
-          </ul>
-        </div>
-        <div class="card-img">
-          <img src="images/coffeesvgs/<?php echo $drink->drinkImg ?>" alt="" />
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 col-sm-12 col-xs-12">
+              <div class="text-wrapper">
+                <div class="ingredients-container">
+                  <ul class="ingredients-list">
+                    <?php
+                    $ingredients = $drink->ingredients;
+                      for ($i=0; $i<count($ingredients); $i++) {
+                        echo "<li>".$ingredients[$i]->qty." <span class='uppercase'>".$ingredients[$i]->ingredient."</span></li>";
+                      }
+                    ?>
+                  </ul>
+                </div>
+                <div class="steps-container">
+                  <ul class="steps-list">
+                    <?php
+                    $steps = $drink->steps;
+                      for ($i=0; $i<count($steps); $i++) {
+                        echo "<li>".$steps[$i]->step."</li>";
+                      }
+                    ?>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-12 col-xs-12">
+              <div class="img-wrapper">
+                <div class="card-img">
+                  <img src="images/coffeesvgs/<?php echo $drink->drinkImg ?>" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </body>
+    <!-- </body> -->
   <?php
   }
+
+if(isset($_GET['did'])){
+  showDrinkDetail($data[$_GET['did']]);
+  die;
+}
 ?>
 
 <!DOCTYPE html>
@@ -70,6 +87,8 @@ function showDrinkDetail($drink) {
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="js/coffee.js"></script>
 </head>
 <?php
   if(isset($_GET['id'])) {
@@ -87,9 +106,45 @@ function showDrinkDetail($drink) {
           <?php echo showCategories($categoriesData[$i]->categoryName);?>
         </div>
       </div>
+
     <?php
-    echo "</body>";
     }
+    echo "
+    <div class='modal'><div class='modal-inner'></div></div>
+    </body>";
   }
 ?>
+<style>
+.modal {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  background-color:rgba(0,0,0,0.3);
+  display:none;
+}
+.modal-inner {
+  width:90%;
+  height:90%;
+  position:absolute;
+  bottom:5%;
+  left:50%;
+  transform-origin : 0% 100%;
+  transform:scale(0.3,0.3) translateX(-50%);
+  background-color:white;
+  border-radius:1em;
+  transition:all 0.3s;
+  opacity:0;
+
+}
+.modal.active {
+  /*display:block;*/
+}
+.modal.active .modal-inner {
+  transform:scale(1,1) translateX(-50%);
+  opacity:1;
+}
+</style>
+
 </html>

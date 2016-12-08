@@ -7,6 +7,7 @@
   letter-spacing: 0.1em;
   font-size: 1.25rem;
   padding-left: 1rem;
+  color: #713A1E;
 }
 
 .categories-subtitle {
@@ -25,7 +26,7 @@
 
 .drink-container {
   width: 10rem;
-  padding: 1rem;
+  padding: 2rem 1rem;
   border-radius: 10px;
   text-align: center;
   display: inline-block;
@@ -39,13 +40,14 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.75rem;
+  color: #713A1E;
 }
 
 .card-container {
   height: 100%;
   width: 100%;
   border-radius: 10px;
-  padding: 2rem;
+  padding: 5vh 5vw 0 5vw;
   overflow-y: auto;
 }
 
@@ -55,6 +57,19 @@
   letter-spacing: 0.1em;
   font-size: 1.5rem;
   text-align: center;
+  color: #713A1E;
+}
+
+.text-wrapper {
+  @media (min-width: 800px) {
+    padding: 2rem;
+  }
+}
+
+.img-wrapper {
+  @media (min-width: 800px) {
+    padding: 2rem;
+  }
 }
 
 .ingredients-list {
@@ -70,12 +85,6 @@
   li {
     list-style: none;
   }
-}
-
-.card-img {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  transform: translateY(-5rem);
 }
 
 .uppercase {
