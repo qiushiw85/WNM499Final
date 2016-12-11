@@ -2,7 +2,6 @@
   padding-top: 2rem;
 }
 .categories-title {
-  font-family: 'Brandon';
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 1.25rem;
@@ -36,7 +35,6 @@
 }
 
 .drink-name {
-  font-family: 'Brandon';
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.75rem;
@@ -47,40 +45,58 @@
   position: relative;
 }
 
-.card-container {
-  height: 100%;
-  width: 100%;
-  border-radius: 10px;
-  padding: 5vh 5vw 0 5vw;
-  -webkit-overflow-scrolling: touch;
+.card-bgr {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.card-container {
+  // height: 100%;
+  // width: 100%;
+  // border-radius: 10px;
+  padding: 5vh 5vw 0 5vw;
+  // -webkit-overflow-scrolling: touch;
+  // overflow-y: auto;
 }
 
 .card-name {
-  font-family: 'Brandon';
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 1.5rem;
+  font-weight: 700;
+  font-size: 2.5rem;
   text-align: center;
-  color: #713A1E;
+  color: white;
+  margin-top: 2rem;
+  // margin-bottom: 2rem;
+  letter-spacing: -1px;
+  text-shadow: -1px 2px 0 rgba(0,0,0,0.10);
 }
 
 .card-img {
   position: relative;
+  width: 100%;
 }
 
 .card-liquid {
   position: absolute;
-  height: 90%;
+  height: 87%;
   width: 90%;
-  bottom: 0;
+  bottom: 10%;
   left: 50%;
-  transform: translate(-50%,-12px) rotate(180deg);
+  transform: translate(-50%) rotate(180deg);
+  @media (min-width: 800px) {
+    transform: translate(-50%) rotate(180deg);
+  }
   &--bgr {
-    background-color: rgb(240,240,240);
+    background-color: rgba(240,240,240,0.8);
   }
   &--card {
     height: 85%;
+    bottom: 0.8rem;
+    transform: translate(-50%) rotate(180deg);
   }
 }
 
@@ -88,7 +104,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  top: -45%;
+  top: -25%;
+  opacity: 0;
   left: 50%;
   transform: translateX(-50%) scale(0);
   transform-origin: center;
@@ -100,14 +117,14 @@
   width: 100%;
   animation-timing-function: cubic-bezier(.2,.6,.8);
   animation-fill-mode: forwards;
-  &--card {height:100%}
+  // &--card {height:100%}
 }
 
 .inner-cream {
   width: 100%;
   animation-timing-function: cubic-bezier(.8,1);
   animation-fill-mode: forwards;
-  &--card {height:100%}
+  // &--card {height:100%}
 }
 
 .cup-img {
@@ -115,29 +132,73 @@
 }
 
 .text-wrapper {
+  border-radius: 10px 10px 0 0;
+  background-color: white;
+  padding: 3rem 1.5rem;
+  box-shadow: 0 5px 7px 0 rgba(0,0,0,0.10), 0 5px 15px 0 rgba(0,0,0,0.10);
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  color: #282828;
+  font-size: 14px;
   @media (min-width: 800px) {
     padding: 2rem;
   }
 }
 
 .img-wrapper {
+  padding: 3rem;
   @media (min-width: 800px) {
-    padding: 2rem;
+    padding: 4rem;
+  }
+}
+
+.section-title-wrapper {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 1px;
+    background-color: rgb(240,240,240);
+  }
+  .section-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    background-color: white;
+    padding-right: 0.5rem;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
   }
 }
 
 .ingredients-list {
   padding-left: 0;
+  margin-bottom: 2rem;
   li {
     list-style: none;
+    margin-bottom: 0.5em;
+  }
+  .ingredients-qty {
+    text-align: right;
+    padding-right: 15px;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #9B9B9B;
+    padding-top: 3px
   }
 }
 
 .steps-list {
   padding-left: 0;
-  font-family: 'Brandon';
   li {
     list-style: none;
+    margin-bottom: 1em;
   }
 }
 
@@ -165,10 +226,14 @@
 
 @keyframes jello {
   11.1% {
-    transform: translateX(-50%) scale(0)
+    transform: translateX(-50%) scale(0);
+    top: -25%;
+    opacity: 0
   }
   33.3% {
-    transform: translateX(-50%) scale(1)
+    transform: translateX(-50%);
+    top: -44%;
+    opacity: 1
   }
   44.4% {
     transform: translateX(-50%) skewX(-12.5deg)
@@ -192,6 +257,8 @@
     transform: translateX(-50%) skewX(-0.1953125deg)
   }
   100% {
-    transform: translateX(-50%) scale(1)
+    transform: translateX(-50%);
+    top: -44%;
+    opacity: 1
   }
 }

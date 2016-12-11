@@ -21,7 +21,8 @@
             "height":"70%"
          },
          {
-            "ingredient":"caramel sauce"
+            "ingredient":"caramel sauce",
+            "qty":"~"
          }
       ],
       "steps":[
@@ -29,7 +30,7 @@
             "step":"Warm a serving cup"
          },
          {
-            "step":"Add one tablespoon of vanilla syrup in the cup"
+            "step":"Add one tsp of vanilla syrup in the cup"
          },
          {
             "step":"Froth one cup of milk, and add the hot milk and  milk foam in"
@@ -63,6 +64,7 @@
          },
          {
             "ingredient":"caramel sauce",
+            "qty":"~",
             "color":"#FFEEA4",
             "height":"70%"
          }
@@ -121,7 +123,9 @@
       "ingredients":[
          {
             "ingredient":"espresso",
-            "qty":"1 shot"
+            "qty":"1 shot",
+            "color":"#9B5E50",
+            "height":"45%"
          },
          {
             "ingredient":"milk of your choice",
@@ -129,10 +133,13 @@
          },
          {
             "ingredient":"mocha powder or chocolate",
-            "qty":"2 tsp"
+            "qty":"2 tsp",
+            "color":"#CC7266",
+            "height":"70%"
          },
          {
-            "ingredient":"whipped cream"
+            "ingredient":"whipped cream",
+            "qty":"~"
          }
       ],
       "steps":[
@@ -162,13 +169,19 @@
       "drinkName":"Affogato",
       "drinkCategory":"American Classics",
       "drinkBgrColor":"#FFF1B6",
+      "hasCream":true,
       "ingredients":[
          {
             "ingredient":"espresso",
-            "qty":"2 shots"
+            "qty":"2 shots",
+            "color":"#9B5E50",
+            "height":"40%"
          },
          {
-            "ingredient":"vanilla ice cream"
+            "ingredient":"vanilla ice cream",
+            "qty":"~",
+            "color":"#FFEEA4",
+            "height":"60%"
          }
       ],
       "steps":[
@@ -192,7 +205,9 @@
       "ingredients":[
          {
             "ingredient":"espresso",
-            "qty":"1 shot"
+            "qty":"1 shot",
+            "color":"#9B5E50",
+            "height":"60%"
          }
       ],
       "steps":[
@@ -213,11 +228,15 @@
       "ingredients":[
          {
             "ingredient":"espresso",
-            "qty":"1 shot"
+            "qty":"1 shot",
+            "color":"#9B5E50",
+            "height":"50%"
          },
          {
             "ingredient":"water",
-            "qty":"8 oz"
+            "qty":"8 oz",
+            "color":"#A3E6EF",
+            "height":"70%"
          }
       ],
       "steps":[
@@ -238,10 +257,13 @@
       "drinkName":"Doppio",
       "drinkCategory":"American Classics",
       "drinkBgrColor":"#E1B973",
+      "hasCream":true,
       "ingredients":[
          {
             "ingredient":"espresso",
-            "qty":"2 shots"
+            "qty":"2 shots",
+            "color":"#9B5E50",
+            "height":"60%"
          },
          {
             "ingredient":"cream (optional)",
@@ -263,25 +285,33 @@
       "drinkName":"Irish Coffee",
       "drinkCategory":"American Classics",
       "drinkBgrColor":"#F3F1AC",
+      "hasCream":true,
       "ingredients":[
          {
             "ingredient":"1 shot of espresso and water",
-            "qty":"1 cup"
+            "qty":"1 cup",
+            "color":"#9B5E50",
+            "height":"30%"
          },
          {
             "ingredient":"Irish whiskey",
-            "qty":"1 jigger"
+            "qty":"1 jigger",
+            "color":"#FFEEA4",
+            "height":"50%"
          },
          {
             "ingredient":"Irish cream",
-            "qty":"1 jigger"
+            "qty":"1 jigger",
+            "color":"#EDE4BC",
+            "height":"70%"
          },
          {
             "ingredient":"ground nutmeg",
             "qty":"1 dash"
          },
          {
-            "ingredient":"whipped cream"
+            "ingredient":"whipped cream",
+            "qty":"~"
          }
       ],
       "steps":[
@@ -302,11 +332,15 @@
       "ingredients":[
          {
             "ingredient":"espresso",
-            "qty":"1 shot"
+            "qty":"1 shot",
+            "color":"#9B5E50",
+            "height":"40%"
          },
          {
             "ingredient":"regular brewed coffee",
-            "qty":"8 oz"
+            "qty":"8 oz",
+            "color":"#4F251F",
+            "height":"70%"
          }
       ],
       "steps":[
@@ -327,15 +361,21 @@
       "ingredients":[
          {
             "ingredient":"1/2 cup freshly-roasted coffee beans",
-            "qty":"1/2 cup"
+            "qty":"1/2 cup",
+            "color":"#9B5E50",
+            "height":"40%"
          },
          {
             "ingredient":"Water",
-            "qty":"4 cups"
+            "qty":"4 cups",
+            "color":"#A3E6EF",
+            "height":"55%"
          },
          {
             "ingredient":"Milk if desired",
-            "qty":"2 jigger"
+            "qty":"2 jigger",
+            "color":"#FFEEA4",
+            "height":"70%"
          }
       ],
       "steps":[
@@ -375,9 +415,17 @@
       "drinkCategory":"American Classics",
       "drinkBgrColor":"#F3F1AC",
       "ingredients":[
-         {
-            "ingredient":"1 heaping tablespoon (about 4 teaspoons) of Cafe Du Monde or Trung Nguyen grind 1-2 teaspoons condensed",
-            "qty":"1 heaping tablespoon"
+        {
+           "ingredient":"condensed milk (any brand, really)",
+           "qty":"3 tsps",
+           "color":"#FFFFFF",
+           "height":"20%"
+        },
+        {
+            "ingredient":"1 heaping tsp (about 4 teaspoons) of Cafe Du Monde or Trung Nguyen grind 1-2 teaspoons condensed",
+            "qty":"1 heaping tsp",
+            "color":"#4F251F",
+            "height":"50%"
          },
          {
             "ingredient":"milk to fit your taste",
@@ -388,15 +436,12 @@
             "qty":"1 filter"
          },
          {
-            "ingredient":"condensed milk (any brand, really)",
-            "qty":"3 tablespoons"
-         },
-         {
             "ingredient":"a glass for the brew",
             "qty":"1 glass"
          },
          {
-            "ingredient":"a second glass filled with ice"
+            "ingredient":"a second glass filled with ice",
+            "qty":"~"
          }
       ],
       "steps":[
@@ -404,7 +449,7 @@
             "step":"Start by boiling some water."
          },
          {
-            "step":"Remove the metal filter and pour in 1 heaping tablespoon of Cafe Du Monde (about 4 teaspoons)"
+            "step":"Remove the metal filter and pour in 1 heaping tsp of Cafe Du Monde (about 4 teaspoons)"
          },
          {
             "step":"Twist the filter on gently until it just starts to stop. Then turn it little more, a bit less than a turn."
@@ -413,7 +458,7 @@
             "step":"If you wanted to drink this hot instead, you can put the brewing cup in a bowl and fill the bowl with hot water. For this recipe, we're going to stick with the iced version."
          },
          {
-            "step":"Remove the metal filter and pour in 1 heaping tablespoon of Cafe Du Monde (about 4 teaspoons)"
+            "step":"Remove the metal filter and pour in 1 heaping tsp of Cafe Du Monde (about 4 teaspoons)"
          },
          {
             "step":"Ideally you want to add the condensed milk to the cup before brewing because the boiling water actually cooks it. It does have a slight affect on the flavor. For this recipe we'll add it after since most readers probably don't know how much condensed milk they want."
@@ -435,11 +480,15 @@
       "ingredients":[
          {
             "ingredient":"2 shots of espresso",
-            "qty":"2 shot"
+            "qty":"2 shot",
+            "color":"#9B5E50",
+            "height":"50%"
          },
          {
             "ingredient":"Milk of your choice",
-            "qty":"1 cup"
+            "qty":"1 cup",
+            "color":"#FFEEA4",
+            "height":"70%"
          }
       ],
       "steps":[
@@ -469,15 +518,21 @@
       "ingredients":[
          {
             "ingredient":"2 shots of espresso",
-            "qty":"2 shots"
+            "qty":"2 shots",
+            "color":"#9B5E50",
+            "height":"45%"
          },
          {
             "ingredient":"water",
-            "qty":"1 cup"
+            "qty":"1 cup",
+            "color":"#A3E6EF",
+            "height":"55%"
          },
          {
             "ingredient":"Milk of your choice to top",
-            "qty":"1 jigger"
+            "qty":"1 jigger",
+            "color":"#FFEEA4",
+            "height":"70%"
          }
       ],
       "steps":[

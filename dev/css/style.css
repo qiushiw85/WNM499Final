@@ -1,9 +1,4 @@
-@font-face {
-  font-family: 'Archer';
-  src: url("Archer-Book-Pro.otf"); }
-@font-face {
-  font-family: 'Brandon';
-  src: url("Brandon_med.otf"); }
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased; }
@@ -13,7 +8,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Archer', Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-size: 100%;
   height: 100%; }
 
@@ -28,7 +23,6 @@ img {
   padding-top: 2rem; }
 
 .categories-title {
-  font-family: 'Brandon';
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 1.25rem;
@@ -57,7 +51,6 @@ img {
     margin-left: 0.5rem; }
 
 .drink-name {
-  font-family: 'Brandon';
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.75rem;
@@ -66,42 +59,54 @@ img {
 .drink-img {
   position: relative; }
 
-.card-container {
-  height: 100%;
+.card-bgr {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  border-radius: 10px;
-  padding: 5vh 5vw 0 5vw;
-  -webkit-overflow-scrolling: touch;
-  overflow-y: auto; }
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; }
+
+.card-container {
+  padding: 5vh 5vw 0 5vw; }
 
 .card-name {
-  font-family: 'Brandon';
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 1.5rem;
+  font-weight: 700;
+  font-size: 2.5rem;
   text-align: center;
-  color: #713A1E; }
+  color: white;
+  margin-top: 2rem;
+  letter-spacing: -1px;
+  text-shadow: -1px 2px 0 rgba(0, 0, 0, 0.1); }
 
 .card-img {
-  position: relative; }
+  position: relative;
+  width: 100%; }
 
 .card-liquid {
   position: absolute;
-  height: 90%;
+  height: 87%;
   width: 90%;
-  bottom: 0;
+  bottom: 10%;
   left: 50%;
-  transform: translate(-50%, -12px) rotate(180deg); }
+  transform: translate(-50%) rotate(180deg); }
+  @media (min-width: 800px) {
+    .card-liquid {
+      transform: translate(-50%) rotate(180deg); } }
   .card-liquid--bgr {
-    background-color: #f0f0f0; }
+    background-color: rgba(240, 240, 240, 0.8); }
   .card-liquid--card {
-    height: 85%; }
+    height: 85%;
+    bottom: 0.8rem;
+    transform: translate(-50%) rotate(180deg); }
 
 .card-cream {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: -45%;
+  top: -25%;
+  opacity: 0;
   left: 50%;
   transform: translateX(-50%) scale(0);
   transform-origin: center;
@@ -113,37 +118,75 @@ img {
   width: 100%;
   animation-timing-function: cubic-bezier(0.2, 0.6, 0.8);
   animation-fill-mode: forwards; }
-  .inner-liquid--card {
-    height: 100%; }
 
 .inner-cream {
   width: 100%;
   animation-timing-function: cubic-bezier(0.8, 1);
   animation-fill-mode: forwards; }
-  .inner-cream--card {
-    height: 100%; }
 
 .cup-img {
   position: relative; }
 
-@media (min-width: 800px) {
-  .text-wrapper {
-    padding: 2rem; } }
+.text-wrapper {
+  border-radius: 10px 10px 0 0;
+  background-color: white;
+  padding: 3rem 1.5rem;
+  box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.1), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  color: #282828;
+  font-size: 14px; }
+  @media (min-width: 800px) {
+    .text-wrapper {
+      padding: 2rem; } }
 
-@media (min-width: 800px) {
-  .img-wrapper {
-    padding: 2rem; } }
+.img-wrapper {
+  padding: 3rem; }
+  @media (min-width: 800px) {
+    .img-wrapper {
+      padding: 4rem; } }
+
+.section-title-wrapper {
+  position: relative; }
+  .section-title-wrapper:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 1px;
+    background-color: #f0f0f0; }
+  .section-title-wrapper .section-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    background-color: white;
+    padding-right: 0.5rem;
+    display: inline-block;
+    position: relative;
+    z-index: 10; }
 
 .ingredients-list {
-  padding-left: 0; }
+  padding-left: 0;
+  margin-bottom: 2rem; }
   .ingredients-list li {
-    list-style: none; }
+    list-style: none;
+    margin-bottom: 0.5em; }
+  .ingredients-list .ingredients-qty {
+    text-align: right;
+    padding-right: 15px;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #9B9B9B;
+    padding-top: 3px; }
 
 .steps-list {
-  padding-left: 0;
-  font-family: 'Brandon'; }
+  padding-left: 0; }
   .steps-list li {
-    list-style: none; }
+    list-style: none;
+    margin-bottom: 1em; }
 
 .uppercase {
   text-transform: uppercase; }
@@ -160,9 +203,13 @@ img {
     height: 90%; } }
 @keyframes jello {
   11.1% {
-    transform: translateX(-50%) scale(0); }
+    transform: translateX(-50%) scale(0);
+    top: -25%;
+    opacity: 0; }
   33.3% {
-    transform: translateX(-50%) scale(1); }
+    transform: translateX(-50%);
+    top: -44%;
+    opacity: 1; }
   44.4% {
     transform: translateX(-50%) skewX(-12.5deg); }
   51.5% {
@@ -178,7 +225,9 @@ img {
   88.8% {
     transform: translateX(-50%) skewX(-0.19531deg); }
   100% {
-    transform: translateX(-50%) scale(1); } }
+    transform: translateX(-50%);
+    top: -44%;
+    opacity: 1; } }
 [class*='col-'] {
   float: left; }
 

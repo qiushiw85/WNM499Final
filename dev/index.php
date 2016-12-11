@@ -17,7 +17,7 @@ function showDrinks($id,$category){
           ?>
           <div class="card-liquid card-liquid--bgr card-liquid--card"></div>
           <div class="card-cream card-cream--card"><?php include 'partials/cream.html' ?></div>
-          <div class="card-liquid card-liquid--cream card-liquid--card">
+          <div class="card-liquid card-liquid--cream card-liquid--card" style='height:85%'>
             <div class='inner-cream inner-cream--card' style='background-color:#FBF5DE'></div>
           </div>
           <?php
@@ -28,7 +28,7 @@ function showDrinks($id,$category){
         <?php
           $ingredients = $category[$id]->ingredients;
           for ($i=count($ingredients); $i>-1; $i--) {
-            echo "<div class='card-liquid' style='height:".$ingredients[$i]->height."'><div class='inner-liquid inner-liquid--card' style='background-color:".$ingredients[$i]->color."'></div></div>";
+            echo "<div class='card-liquid card-liquid--card' style='height:".$ingredients[$i]->height."'><div class='inner-liquid inner-liquid--card' style='background-color:".$ingredients[$i]->color."'></div></div>";
           }
         ?>
         <svg class='cup-img' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px'
@@ -75,71 +75,77 @@ function showCategories($category_name) {
 function showDrinkDetail($drink) {
   $currentID=$_GET['id'];
   ?>
-    <!-- <body style="background-color:rgb(20,20,20)"> -->
-      <div class="card-container" style="background-color:<?php echo $drink->drinkBgrColor?>">
-        <div class="card-name"><?php echo $drink->drinkName?></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-7 col-sm-12 col-xs-12">
-              <div class="text-wrapper">
-                <div class="ingredients-container">
-                  <ul class="ingredients-list">
-                    <?php
-                    $ingredients = $drink->ingredients;
-                      for ($i=0; $i<count($ingredients); $i++) {
-                        echo "<li>".$ingredients[$i]->qty." <span class='uppercase'>".$ingredients[$i]->ingredient."</span></li>";
-                      }
-                    ?>
-                  </ul>
-                </div>
-                <div class="steps-container">
-                  <ul class="steps-list">
-                    <?php
-                    $steps = $drink->steps;
-                      for ($i=0; $i<count($steps); $i++) {
-                        echo "<li>".$steps[$i]->step."</li>";
-                      }
-                    ?>
-                  </ul>
-                </div>
+  <body style="background-color:<?php echo $drink->drinkBgrColor?>">
+    <div class="card-name"><?php echo $drink->drinkName?></div>
+    <div class="card-container">
+      <!-- <div class="container"> -->
+        <div class="row">
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="img-wrapper">
+              <div class="card-img">
+                <?php
+                if ($drink->hasCream == true) {
+                  ?>
+                  <div class="card-liquid card-liquid--bgr"></div>
+                  <div class="card-cream"><?php include 'partials/cream.html' ?></div>
+                  <div class="card-liquid card-liquid--cream">
+                    <div class='inner-cream' style='background-color:#FBF5DE'></div>
+                  </div>
+                  <?php
+                } else { ?>
+                  <div class="card-liquid card-liquid--bgr"></div>
+                  <?php
+                } ?>
+                <?php
+                $ingredients = $drink->ingredients;
+                  for ($i=count($ingredients); $i>-1; $i--) {
+                    echo "<div class='card-liquid' style='height:".$ingredients[$i]->height."'><div class='inner-liquid' style='background-color:".$ingredients[$i]->color."'></div></div>";
+                  }
+                ?>
+                <svg class="cup-img" version="1.1" id="cup-horizontal" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                	 viewBox="0 0 550 350" style="enable-background:new 0 0 550 350;" xml:space="preserve">
+                   <style>
+                    .cup-bgr{fill:<?php echo $drink->drinkBgrColor?>;}
+                   </style>
+                   <?php include "partials/cup.html"; ?>
+                </svg>
               </div>
             </div>
-            <div class="col-md-5 col-sm-12 col-xs-12">
-              <div class="img-wrapper">
-                <div class="card-img">
-                  <?php
-                  if ($drink->hasCream == true) {
-                    ?>
-                    <div class="card-liquid card-liquid--bgr"></div>
-                    <div class="card-cream"><?php include 'partials/cream.html' ?></div>
-                    <div class="card-liquid card-liquid--cream">
-                      <div class='inner-cream' style='background-color:#FBF5DE'></div>
-                    </div>
-                    <?php
-                  } else { ?>
-                    <div class="card-liquid card-liquid--bgr"></div>
-                    <?php
-                  } ?>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="text-wrapper">
+              <div class="section-title-wrapper">
+                <div class="section-title" style="color:<?php echo $drink->drinkBgrColor?>">Ingredients</div>
+              </div>
+              <div class="ingredients-container">
+                <ul class="ingredients-list">
                   <?php
                   $ingredients = $drink->ingredients;
-                    for ($i=count($ingredients); $i>-1; $i--) {
-                      echo "<div class='card-liquid' style='height:".$ingredients[$i]->height."'><div class='inner-liquid' style='background-color:".$ingredients[$i]->color."'></div></div>";
+                    for ($i=0; $i<count($ingredients); $i++) {
+                      echo "<li><div class='row'><div class='col-xs-4 ingredients-qty'>".$ingredients[$i]->qty."</div><div class='col-xs-8' style='text-transform:capitalize'>".$ingredients[$i]->ingredient."</div></div></li>";
                     }
                   ?>
-                  <svg class="cup-img" version="1.1" id="cup-horizontal" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  	 viewBox="0 0 550 350" style="enable-background:new 0 0 550 350;" xml:space="preserve">
-                     <style>
-                      .cup-bgr{fill:<?php echo $drink->drinkBgrColor?>;}
-                     </style>
-                     <?php include "partials/cup.html"; ?>
-                  </svg>
-                </div>
+                </ul>
+              </div>
+              <div class="section-title-wrapper">
+                <div class="section-title" style="color:<?php echo $drink->drinkBgrColor?>">Steps</div>
+              </div>
+              <div class="steps-container">
+                <ul class="steps-list">
+                  <?php
+                  $steps = $drink->steps;
+                    for ($i=0; $i<count($steps); $i++) {
+                      echo "<li>".$steps[$i]->step."</li>";
+                    }
+                  ?>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    <!-- </body> -->
+      <!-- </div> -->
+    </div>
+  </body>
   <?php
   }
 
@@ -192,36 +198,37 @@ if(isset($_GET['did'])){
 .cup-shadow{opacity:0.2;}
 .cup-shadow-dark{opacity:0.3;}
 .cup-outline{fill:#613128;}
-.modal {
+/*.modal {
   position:fixed;
   top:0;
   left:0;
   width:100%;
-  height:100vh;
+  height:100%;
   background-color:rgba(0,0,0,0);
   display:none;
   transition:all 0.3s;
-}
+}*/
+
+.modal {display: none;}
 .modal-inner {
-  width:90%;
-  height:90%;
-  position:absolute;
+  width:100%;
+  height:100%;
+  /*position:absolute;
   bottom:5%;
   left:50%;
   transform-origin : 0% 100%;
   transform:scale(0.3,0.3) translateX(-50%);
   background-color:white;
-  border-radius:1em;
+  border-radius:1em;*/
   transition:all 0.3s;
   opacity:0;
 
 }
-.modal.active {
-  /*display:block;*/
+/*.modal.active {
   background-color:rgba(0,0,0,0.8);
-}
+}*/
 .modal.active .modal-inner {
-  transform:scale(1,1) translateX(-50%);
+  /*transform:scale(1,1) translateX(-50%);*/
   opacity:1;
 }
 </style>
