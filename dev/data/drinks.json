@@ -10,11 +10,15 @@
          },
          {
             "ingredient":"espresso",
-            "qty":"1 shot"
+            "qty":"1 shot",
+            "color":"#9B5E50",
+            "height":"50%"
          },
          {
             "ingredient":"your choice of milk",
-            "qty":"160 ml"
+            "qty":"160 ml",
+            "color":"#FFEEA4",
+            "height":"70%"
          },
          {
             "ingredient":"caramel sauce"
@@ -47,14 +51,20 @@
       "ingredients":[
          {
             "ingredient":"espresso",
-            "qty":"1 shot"
+            "qty":"1 shot",
+            "color":"#9B5E50",
+            "height":"45%"
          },
          {
             "ingredient":"foam milk of your choice",
-            "qty":"8 oz"
+            "qty":"8 oz",
+            "color":"#A3E6EF",
+            "height":"55%"
          },
          {
-            "ingredient":"caramel sauce"
+            "ingredient":"caramel sauce",
+            "color":"#FFEEA4",
+            "height":"70%"
          }
       ],
       "steps":[
@@ -75,14 +85,19 @@
       "drinkName":"Cappuccino",
       "drinkCategory":"Dark Burst",
       "drinkBgrColor":"#C9A89F",
+      "hasCream":true,
       "ingredients":[
          {
             "ingredient":"espresso",
-            "qty":"1 shot"
+            "qty":"1 shot",
+            "color":"#9B5E50",
+            "height":"45%"
          },
          {
             "ingredient":"foam milk of your choice",
-            "qty":"4 oz"
+            "qty":"4 oz",
+            "color":"#FFEEA4",
+            "height":"70%"
          }
       ],
       "steps":[
