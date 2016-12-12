@@ -1,14 +1,38 @@
 
 
 $(function(){
-  $.ajax({
-    url:"data/drinks.json",
-    dataType:"json"
-  })
-  .done(function(d){
-    console.log(d)
-    db = d;
-  })
+  // $.ajax({
+  //   url:"data/drinks.json",
+  //   dataType:"json"
+  // })
+  // .done(function(d){
+  //   console.log(d)
+  //   db = d;
+  // })
+
+  $("[data-id]").on("click",function(e){
+    e.preventDefault();
+    var goTo = this.getAttribute("href");
+    // $(this).html('');
+    // $(this).addClass('fullscreen');
+    $(".modal").show();
+    $(".modal").css("background-color",$(this).css("background-color"));
+    setTimeout(function(){$(".modal").css("bottom",0);},200);
+    setTimeout(function(){
+         window.location = goTo;
+    },500);
+  });
+
+  $("[data-nav]").on("click",function(e){
+    e.preventDefault();
+    var goTo = this.getAttribute("href");
+    $(".modal-top").show();
+    $(".modal-top").css("background-color","#EDEDED");
+    setTimeout(function(){$(".modal-top").css("top",0);},200);
+    setTimeout(function(){
+         window.location = goTo;
+    },500);
+  });
 
 
   // $("[data-id]").on("click",function(e){
@@ -32,6 +56,8 @@ $(function(){
     setTimeout(function(){
       $('.card-cream').css('animation-name','jello');
       $('.card-cream').css('animation-duration','1.5s');
+      $('.cup-cream-svg').css('animation-name','jello-big');
+      $('.cup-cream-svg').css('animation-duration','1.5s');
     },2000);
   // })
   // $(".modal").on("click",function(){
