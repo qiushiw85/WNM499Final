@@ -1,0 +1,160 @@
+[
+  {
+    "drinkName":"Macchiato",
+    "drinkCategory":"American Classics",
+    "drinkBgrColor":"#AD8C6F",
+    "ingredients": [
+      {"ingredient": "vanilla syrup", "qty":"1 tsp"},
+      {"ingredient": "espresso", "qty":"1 shot"},
+      {"ingredient": "your choice of milk", "qty":"160 ml"},
+      {"ingredient": "caramel sauce"}
+    ],
+    "steps": [
+      {"step": "Warm a serving cup"},
+      {"step": "Add one tablespoon of vanilla syrup in the cup"},
+      {"step": "Froth one cup of milk, and add the hot milk and  milk foam in"},
+      {"step": "Pour in one shot of espresso"},
+      {"step": "Drizzling caramel sauce on top and serve"}
+    ],
+    "drinkImg":"Artboard 2.svg"
+  },
+  {
+    "drinkName":"Latte",
+    "drinkCategory":"American Classics",
+    "drinkBgrColor":"#AD8C6F",
+    "ingredients": [
+      {"ingredient": "espresso", "qty":"1 shot"},
+      {"ingredient": "foam milk of your choice", "qty":"8 oz"},
+      {"ingredient": "caramel sauce"}
+    ],
+    "steps": [
+      {"step": "Pull espresso shot in your latte cup"},
+      {"step": "Using a spoon to retain the microbubbles on top of the steamed milk, pour the milk into latte cup"},
+      {"step": "Top Latte with the retained foam and sweeten if desired"}
+    ],
+    "drinkImg":"Artboard 17.svg"
+  },
+  {
+    "drinkName":"Cappuccino",
+    "drinkCategory":"Dark Burst",
+    "drinkBgrColor":"#AD8C6F",
+    "ingredients": [
+      {"ingredient": "espresso", "qty":"1 shot"},
+      {"ingredient": "foam milk of your choice", "qty":"4 oz"}
+    ],
+    "steps": [
+      {"step": "Pull espresso shot in your cup"},
+      {"step": "Froth milk of choice until you get a lot of foam"},
+      {"step": "Top espresso with half milk, half foam"}
+    ],
+    "drinkImg":"Artboard 2.svg"
+  },
+  {
+    "drinkName":"Mocha",
+    "drinkCategory":"Dark Burst",
+    "drinkBgrColor":"#AD8C6F",
+    "ingredients": [
+      {"ingredient": "espresso", "qty":"1 shot"},
+      {"ingredient": "milk of your choice", "qty":"8 oz"},
+      {"ingredient": "mocha powder or chocolate", "qty":"2 tsp"},
+      {"ingredient": "whipped cream"}
+    ],
+    "steps": [
+      {"step": "Pull espresso shot in your cup"},
+      {"step": "Steam milk"},
+      {"step": "Add the mocha or chocolate powder to your espresso"},
+      {"step": "Mix well until fully combined"},
+      {"step": "Pour milk into espresso and powder mixure and stir"},
+      {"step": "Top with whipped cream and enjoy!"}
+    ],
+    "drinkImg":"Artboard 2.svg"
+  },
+  {
+    "drinkName":"Affogato",
+    "drinkCategory":"American Classics",
+    "drinkBgrColor":"#AD8C6F",
+    "ingredients": [
+      {"ingredient": "espresso", "qty":"2 shots"},
+      {"ingredient": "vanilla ice cream"}
+    ],
+    "steps": [
+      {"step": "Scoop ice cream into a cup of your choice"},
+      {"step": "Pull espresso shots into your cup over the ice cream"},
+      {"step": "Top with whipped cream and enjoy!"}
+    ],
+    "drinkImg":"Artboard 2.svg"
+  },
+  {
+    "drinkName":"Espresso",
+    "drinkCategory":"American Classics",
+    "drinkBgrColor":"#AD8C6F",
+    "ingredients": [
+      {"ingredient": "espresso", "qty":"1 shot"}
+    ],
+    "steps": [
+      {"step": "Pull espresso shots into your latte cup"},
+      {"step": "You can add cream or milk of your choice along with sweetener or you can drink the shots straight"}
+    ],
+    "drinkImg":"Artboard 2.svg"
+  },
+  {
+    "drinkName":"Americano",
+    "drinkCategory":"American Classics",
+    "drinkBgrColor":"#AD8C6F",
+    "ingredients": [
+      {"ingredient": "espresso", "qty":"1 shot"},
+      {"ingredient": "water", "qty":"8 oz"}
+    ],
+    "steps": [
+      {"step": "Pull espresso shots into your latte cup"},
+      {"step": "Add Water to espresso shot filling either to the top of the cup or fill up to 75% if yu want to add anything else"},
+      {"step": "You can add cream or milk of your choice along with sweetener"}
+    ],
+    "drinkImg":"Artboard 2.svg"
+  },
+  {
+    "drinkName":"Doppio",
+    "drinkCategory":"American Classics",
+    "drinkBgrColor":"#AD8C6F",
+    "ingredients": [
+      {"ingredient": "espresso", "qty":"2 shots"},
+      {"ingredient": "cream (optional)", "qty":"2 oz"}
+    ],
+    "steps": [
+      {"step": "Pull espresso shots"},
+      {"step": "You can add cream or milk of your choice along with sweetener or you can drink the shots straight"}
+    ],
+    "drinkImg":"Artboard 2.svg"
+  },
+  {
+    "drinkName":"Irish Coffee",
+    "drinkCategory":"American Classics",
+    "drinkBgrColor":"#AD8C6F",
+    "ingredients": [
+      {"ingredient": "1 shot of espresso and water", "qty":"1 cup"},
+      {"ingredient": "Irish whiskey", "qty":"1 jigger"},
+      {"ingredient": "Irish cream", "qty":"1 jigger"},
+      {"ingredient": "ground nutmeg", "qty":"1 dash"},
+      {"ingredient": "whipped cream"}
+    ],
+    "steps": [
+      {"step": "In a coffee mug, combine Irish cream and Irish whiskey"},
+      {"step": "Fill mug with coffee. Top with a dab of whipped cream and a dash of nutmeg"}
+    ],
+    "drinkImg":"Artboard 2.svg"
+  },
+  {
+    "drinkName":"Red Eye",
+    "drinkCategory":"Dark Burst",
+    "drinkBgrColor":"#AD8C6F",
+    "ingredients": [
+      {"ingredient": "espresso", "qty":"1 shot"},
+      {"ingredient": "regular brewed coffee", "qty":"8 oz"}
+    ],
+    "steps": [
+      {"step": "Pour yourself a cup of regular brewed coffee"},
+      {"step": "Add one shot of espresso to brewed coffee"}
+    ],
+    "drinkImg":"Artboard 2.svg"
+  }
+]

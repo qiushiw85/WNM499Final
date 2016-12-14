@@ -1,0 +1,83 @@
+.categories-container {
+  padding-top: 2rem;
+}
+.categories-title {
+  font-family: 'Brandon';
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.25rem;
+  padding-left: 1rem;
+}
+
+.categories-subtitle {
+  padding-left: 1rem;
+  font-size: 1rem;
+  color: rgb(140,140,140);
+}
+
+.categories-drinks {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  padding: 1rem;
+}
+
+.drink-container {
+  width: 10rem;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  & + .drink-container {
+    margin-left: 0.5rem;
+  }
+}
+
+.drink-name {
+  font-family: 'Brandon';
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+}
+
+.card-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.card-name {
+  font-family: 'Brandon';
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.ingredients-list {
+  padding-left: 0;
+  li {
+    list-style: none;
+  }
+}
+
+.steps-list {
+  padding-left: 0;
+  font-family: 'Brandon';
+  li {
+    list-style: none;
+  }
+}
+
+.card-img {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  transform: translateY(-5rem);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

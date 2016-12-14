@@ -1,10 +1,21 @@
+@font-face {
+  font-family: 'Archer';
+  src: url("Archer-Book-Pro.otf"); }
+@font-face {
+  font-family: 'Brandon';
+  src: url("Brandon_med.otf"); }
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; }
+
+html {
+  height: 100%; }
 
 body {
   margin: 0;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 100%; }
+  font-family: 'Archer', Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  height: 100%; }
 
 a {
   text-decoration: none;
@@ -12,6 +23,76 @@ a {
 
 img {
   width: 100%; }
+
+.categories-container {
+  padding-top: 2rem; }
+
+.categories-title {
+  font-family: 'Brandon';
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.25rem;
+  padding-left: 1rem; }
+
+.categories-subtitle {
+  padding-left: 1rem;
+  font-size: 1rem;
+  color: #8c8c8c; }
+
+.categories-drinks {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  padding: 1rem; }
+
+.drink-container {
+  width: 10rem;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block; }
+  .drink-container + .drink-container {
+    margin-left: 0.5rem; }
+
+.drink-name {
+  font-family: 'Brandon';
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem; }
+
+.card-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  padding: 2rem;
+  overflow-y: auto; }
+
+.card-name {
+  font-family: 'Brandon';
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.5rem;
+  text-align: center; }
+
+.ingredients-list {
+  padding-left: 0; }
+  .ingredients-list li {
+    list-style: none; }
+
+.steps-list {
+  padding-left: 0;
+  font-family: 'Brandon'; }
+  .steps-list li {
+    list-style: none; }
+
+.card-img {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  transform: translateY(-5rem); }
+
+.uppercase {
+  text-transform: uppercase; }
 
 [class*='col-'] {
   float: left; }
