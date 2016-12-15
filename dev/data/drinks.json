@@ -541,5 +541,561 @@
          }
       ],
       "drinkImg":"Artboard 14.svg"
+   },
+   {
+      "drinkName":"Peppermint Mocha",
+      "drinkCategory":"Flavored Drinks",
+      "drinkBgrColor":"#E8E6E7",
+      "hasCream":true,
+      "ingredients":[
+         {
+            "ingredient":"espresso",
+            "qty":"1 shot",
+            "color":"#9B5E50",
+            "height":"40%"
+         },
+         {
+            "ingredient":"Peppermint syrup",
+            "qty":"1 shot",
+            "color":"#C45F74",
+            "height":"50%"
+         },
+         {
+            "ingredient":"milk of your choice",
+            "qty":"8 oz"
+         },
+         {
+            "ingredient":"mocha powder or chocolate",
+            "qty":"2 tsp",
+            "color":"#CC7266",
+            "height":"70%"
+         },
+         {
+            "ingredient":"whipped cream",
+            "qty":"~"
+         },
+         {
+            "ingredient":"ground peppermint candy",
+            "qty":"1 dash"
+         }
+      ],
+      "steps":[
+         {
+            "step":"Pull espresso shot in your cup"
+         },
+         {
+            "step":"Add Peppermint syrup to espresso"
+         },
+         {
+            "step":"Steam milk"
+         },
+         {
+            "step":"Add the mocha or chocolate powder to your espresso"
+         },
+         {
+            "step":"Mix well until fully combined"
+         },
+         {
+            "step":"Pour milk into espresso and powder mixture and stir"
+         },
+         {
+            "step":"Top with whipped cream and peppermint candy shreds. Enjoy!"
+         }
+      ],
+      "drinkImg":"Artboard 4.svg",
+      "drinkHistory":"A caffe mocha, also called mocaccino, is a chocolate-flavored variant of a caffe latte. Like a caffe latte, caffe mocha is based on espresso and hot milk, but with added chocolate, typically in the form of sweet cocoa powder, although many varieties use chocolate syrup. Mochas can contain dark or milk chocolate. Caffe mochas typically contain the distinctive milk froth on top, although, as is common with hot chocolate, they are sometimes served with whipped cream instead. They are usually topped with a dusting of either cinnamon or cocoa powder, and marshmallows may also be added on top for flavor and decoration."
+   },
+   {
+      "drinkName":"Pumpkin Spice Latte",
+      "drinkCategory":"Flavored Drinks",
+      "drinkBgrColor":"#D68E38",
+      "ingredients":[
+         {
+            "ingredient":"espresso",
+            "qty":"1 shot",
+            "color":"#9B5E50",
+            "height":"45%"
+         },
+         {
+            "ingredient":"Pumpkin Spice Syrup",
+            "qty":"1 shot",
+            "color":"#D68E38",
+            "height":"50%"
+         },
+         {
+            "ingredient":"foam milk of your choice",
+            "qty":"8 oz",
+            "color":"#A3E6EF",
+            "height":"70%"
+         }
+      ],
+      "steps":[
+         {
+            "step":"Pull espresso shot in your latte cup"
+         },
+         {
+            "step":"Pour pumpkin spice syrup in cup with espresso"
+         },
+         {
+            "step":"Using a spoon to retain the microbubbles on top of the steamed milk, pour the milk into latte cup"
+         },
+         {
+            "step":"Top Latte with the retained foam and sweeten if desired"
+         }
+      ],
+      "drinkImg":"Artboard 2.svg",
+      "drinkHistory":"A latte is a coffee drink made with espresso and steamed milk. The term as used in English is a shortened form of the Italian caffe latte, caffelatte or caffellatte, which means milk coffee. The word is also sometimes spelled latte or latte in English with different kinds of accent marks, which can be a hyperforeignism or a deliberate attempt to indicate that the word is not pronounced according to the rules of English orthography. Variants include replacing the coffee with another drink base such as masala chai (spiced Indian tea), mate or matcha, and other types of milk, such as soy milk or almond milk are also used."
+   },
+   {
+      "drinkName":"Vanilla Latte",
+      "drinkCategory":"Creamy",
+      "drinkBgrColor":"#FFF8D2",
+      "ingredients":[
+         {
+            "ingredient":"espresso",
+            "qty":"1 shot",
+            "color":"#9B5E50",
+            "height":"45%"
+         },
+         {
+            "ingredient":"Vanilla Syrup",
+            "qty":"1 shot",
+            "color":"#FFF8D2",
+            "height":"50%"
+         },
+         {
+            "ingredient":"foam milk of your choice",
+            "qty":"8 oz",
+            "color":"#A3E6EF",
+            "height":"70%"
+         }
+      ],
+      "steps":[
+         {
+            "step":"Pull espresso shot in your latte cup"
+         },
+         {
+            "step":"Pour Vanilla syrup in cup with espresso"
+         },
+         {
+            "step":"Using a spoon to retain the microbubbles on top of the steamed milk, pour the milk into latte cup"
+         },
+         {
+            "step":"Top Latte with the retained foam and sweeten if desired"
+         }
+      ],
+      "drinkImg":"Artboard 2.svg",
+      "drinkHistory":"A latte is a coffee drink made with espresso and steamed milk. The term as used in English is a shortened form of the Italian caffe latte, caffelatte or caffellatte, which means milk coffee. The word is also sometimes spelled latte or latte in English with different kinds of accent marks, which can be a hyperforeignism or a deliberate attempt to indicate that the word is not pronounced according to the rules of English orthography. Variants include replacing the coffee with another drink base such as masala chai (spiced Indian tea), mate or matcha, and other types of milk, such as soy milk or almond milk are also used."
+   },
+   {
+      "drinkName":"Pecan caramel Mocha",
+      "drinkCategory":"Flavored Drinks",
+      "drinkBgrColor":"#BA7E56",
+      "hasCream":true,
+      "ingredients":[
+         {
+            "ingredient":"espresso",
+            "qty":"1 shot",
+            "color":"#9B5E50",
+            "height":"40%"
+         },
+         {
+            "ingredient":"Pecan caramel syrup",
+            "qty":"1 shot",
+            "color":"#BA7E56",
+            "height":"50%"
+         },
+         {
+            "ingredient":"milk of your choice",
+            "qty":"8 oz"
+         },
+         {
+            "ingredient":"mocha powder or chocolate",
+            "qty":"2 tsp",
+            "color":"#CC7266",
+            "height":"70%"
+         },
+         {
+            "ingredient":"whipped cream",
+            "qty":"~"
+         }
+      ],
+     "steps":[
+         {
+            "step":"Pull espresso shot in your cup"
+         },
+         {
+            "step":"Add Pecan Caramel syrup to espresso"
+         },
+         {
+            "step":"Steam milk"
+         },
+         {
+            "step":"Add the mocha or chocolate powder to your espresso"
+         },
+         {
+            "step":"Mix well until fully combined"
+         },
+         {
+            "step":"Pour milk into espresso and powder mixure and stir"
+         },
+         {
+            "step":"Top with whipped cream and enjoy!"
+         }
+      ],
+       "drinkImg":"Artboard 4.svg",
+      "drinkHistory":"A caffe mocha, also called mocaccino, is a chocolate-flavored variant of a caffe latte. Like a caffe latte, caffe mocha is based on espresso and hot milk, but with added chocolate, typically in the form of sweet cocoa powder, although many varieties use chocolate syrup. Mochas can contain dark or milk chocolate. Caffe mochas typically contain the distinctive milk froth on top, although, as is common with hot chocolate, they are sometimes served with whipped cream instead. They are usually topped with a dusting of either cinnamon or cocoa powder, and marshmallows may also be added on top for flavor and decoration."
+   },
+   {
+      "drinkName":"Raspberry Latte",
+      "drinkCategory":"Flavored Drinks",
+      "drinkBgrColor":"#9B3A58",
+      "ingredients":[
+         {
+            "ingredient":"espresso",
+            "qty":"1 shot",
+            "color":"#9B5E50",
+            "height":"45%"
+         },
+         {
+            "ingredient":"Raspberry Syrup",
+            "qty":"1 shot",
+            "color":"#9B3A58",
+            "height":"55%"
+         },
+         {
+            "ingredient":"foam milk of your choice",
+            "qty":"8 oz",
+            "color":"#A3E6EF",
+            "height":"70%"
+         }
+      ],
+      "steps":[
+         {
+            "step":"Pull espresso shot in your latte cup"
+         },
+         {
+            "step":"Pour Raspberry syrup in cup with espresso"
+         },
+         {
+            "step":"Using a spoon to retain the microbubbles on top of the steamed milk, pour the milk into latte cup"
+         },
+         {
+            "step":"Top Latte with the retained foam and sweeten if desired"
+         }
+      ],
+      "drinkImg":"Artboard 2.svg",
+      "drinkHistory":"A latte is a coffee drink made with espresso and steamed milk. The term as used in English is a shortened form of the Italian caffe latte, caffelatte or caffellatte, which means milk coffee. The word is also sometimes spelled latte or latte in English with different kinds of accent marks, which can be a hyperforeignism or a deliberate attempt to indicate that the word is not pronounced according to the rules of English orthography. Variants include replacing the coffee with another drink base such as masala chai (spiced Indian tea), mate or matcha, and other types of milk, such as soy milk or almond milk are also used."
+   },
+   {
+      "drinkName":"Hazelnut Mocha",
+      "drinkCategory":"Flavored Drinks",
+      "drinkBgrColor":"#7F5B37",
+      "hasCream":true,
+      "ingredients":[
+         {
+            "ingredient":"espresso",
+            "qty":"1 shot",
+            "color":"#9B5E50",
+            "height":"40%"
+         },
+         {
+            "ingredient":"Hazelnut syrup",
+            "qty":"1 shot",
+            "color":"#7F5B37",
+            "height":"50%"
+         },
+         {
+            "ingredient":"milk of your choice",
+            "qty":"8 oz"
+         },
+         {
+            "ingredient":"mocha powder or chocolate",
+            "qty":"2 tsp",
+            "color":"#CC7266",
+            "height":"70%"
+         },
+         {
+            "ingredient":"whipped cream",
+            "qty":"~"
+         }
+      ],
+      "steps":[
+         {
+            "step":"Pull espresso shot in your cup"
+         },
+         {
+            "step":"Add Hazelnut syrup to espresso"
+         },
+         {
+            "step":"Steam milk"
+         },
+         {
+            "step":"Add the mocha or chocolate powder to your espresso"
+         },
+         {
+            "step":"Mix well until fully combined"
+         },
+         {
+            "step":"Pour milk into espresso and powder mixure and stir"
+         },
+         {
+            "step":"Top with whipped cream and enjoy!"
+         }
+      ],
+      "drinkImg":"Artboard 4.svg",
+      "drinkHistory":"A caffe mocha, also called mocaccino, is a chocolate-flavored variant of a caffe latte. Like a caffe latte, caffe mocha is based on espresso and hot milk, but with added chocolate, typically in the form of sweet cocoa powder, although many varieties use chocolate syrup. Mochas can contain dark or milk chocolate. Caffe mochas typically contain the distinctive milk froth on top, although, as is common with hot chocolate, they are sometimes served with whipped cream instead. They are usually topped with a dusting of either cinnamon or cocoa powder, and marshmallows may also be added on top for flavor and decoration."
+   },
+   {
+      "drinkName":"Almond Latte",
+      "drinkCategory":"Flavored Drinks",
+      "drinkBgrColor":"#FFF8D2",
+      "ingredients":[
+         {
+            "ingredient":"espresso",
+            "qty":"1 shot",
+            "color":"#9B5E50",
+            "height":"45%"
+         },
+         {
+            "ingredient":"Almond Syrup",
+            "qty":"1 shot",
+            "color":"#FFF8D2",
+            "height":"55%"
+         },
+         {
+            "ingredient":"foam milk of your choice",
+            "qty":"8 oz",
+            "color":"#A3E6EF",
+            "height":"70%"
+         }
+      ],
+      "steps":[
+         {
+            "step":"Pull espresso shot in your latte cup"
+         },
+         {
+            "step":"Pour Almond syrup in cup with espresso"
+         },
+         {
+            "step":"Using a spoon to retain the microbubbles on top of the steamed milk, pour the milk into latte cup"
+         },
+         {
+            "step":"Top Latte with the retained foam and sweeten if desired"
+         }
+      ],
+      "drinkImg":"Artboard 2.svg",
+      "drinkHistory":"A latte is a coffee drink made with espresso and steamed milk. The term as used in English is a shortened form of the Italian caffe latte, caffelatte or caffellatte, which means milk coffee. The word is also sometimes spelled latte or latte in English with different kinds of accent marks, which can be a hyperforeignism or a deliberate attempt to indicate that the word is not pronounced according to the rules of English orthography. Variants include replacing the coffee with another drink base such as masala chai (spiced Indian tea), mate or matcha, and other types of milk, such as soy milk or almond milk are also used."
+   },
+   {
+      "drinkName":"Orange cream Mocha",
+      "drinkCategory":"Flavored Drinks",
+      "drinkBgrColor":"#CE956B",
+      "hasCream":true,
+      "ingredients":[
+         {
+            "ingredient":"espresso",
+            "qty":"1 shot",
+            "color":"#9B5E50",
+            "height":"40%"
+         },
+         {
+            "ingredient":"Orange cream",
+            "qty":"1 shot",
+            "color":"#CE956B",
+            "height":"50%"
+         },
+         {
+            "ingredient":"milk of your choice",
+            "qty":"8 oz"
+         },
+         {
+            "ingredient":"mocha powder or chocolate",
+            "qty":"2 tsp",
+            "color":"#CC7266",
+            "height":"70%"
+         },
+         {
+            "ingredient":"whipped cream",
+            "qty":"~"
+         }
+      ],
+      "steps":[
+         {
+            "step":"Pull espresso shot in your cup"
+         },
+         {
+            "step":"Add Orange cream syrup to espresso"
+         },
+         {
+            "step":"Steam milk"
+         },
+         {
+            "step":"Add the mocha or chocolate powder to your espresso"
+         },
+         {
+            "step":"Mix well until fully combined"
+         },
+         {
+            "step":"Pour milk into espresso and powder mixure and stir"
+         },
+         {
+            "step":"Top with whipped cream and enjoy!"
+         }
+      ],
+      "drinkImg":"Artboard 4.svg",
+      "drinkHistory":"A caffe mocha, also called mocaccino, is a chocolate-flavored variant of a caffe latte. Like a caffe latte, caffe mocha is based on espresso and hot milk, but with added chocolate, typically in the form of sweet cocoa powder, although many varieties use chocolate syrup. Mochas can contain dark or milk chocolate. Caffe mochas typically contain the distinctive milk froth on top, although, as is common with hot chocolate, they are sometimes served with whipped cream instead. They are usually topped with a dusting of either cinnamon or cocoa powder, and marshmallows may also be added on top for flavor and decoration."
+  },
+  {
+      "drinkName":"Lavender Latte",
+      "drinkCategory":"Flavored Drinks",
+      "drinkBgrColor":"#ADBCE0",
+      "ingredients":[
+         {
+            "ingredient":"espresso",
+            "qty":"1 shot",
+            "color":"#9B5E50",
+            "height":"45%"
+         },
+         {
+            "ingredient":"Almond Syrup",
+            "qty":"1 shot",
+            "color":"#ADBCE0",
+            "height":"55%"
+         },
+         {
+            "ingredient":"foam milk of your choice",
+            "qty":"8 oz",
+            "color":"#A3E6EF",
+            "height":"70%"
+         },
+         {
+            "ingredient":"whipped cream",
+            "qty":"~"
+         }
+      ],
+      "steps":[
+         {
+            "step":"Pull espresso shot in your latte cup"
+         },
+         {
+            "step":"Pour Lavender syrup in cup with espresso"
+         },
+         {
+            "step":"Using a spoon to retain the microbubbles on top of the steamed milk, pour the milk into latte cup"
+         },
+         {
+            "step":"Top Latte with the retained foam and sweeten if desired"
+         }
+      ],
+      "drinkImg":"Artboard 2.svg",
+      "drinkHistory":"A latte is a coffee drink made with espresso and steamed milk. The term as used in English is a shortened form of the Italian caffe latte, caffelatte or caffellatte, which means milk coffee. The word is also sometimes spelled latte or latte in English with different kinds of accent marks, which can be a hyperforeignism or a deliberate attempt to indicate that the word is not pronounced according to the rules of English orthography. Variants include replacing the coffee with another drink base such as masala chai (spiced Indian tea), mate or matcha, and other types of milk, such as soy milk or almond milk are also used."
+   },
+   {
+      "drinkName":"Lavender Mocha",
+      "drinkCategory":"Flavored Drinks",
+      "drinkBgrColor":"#ADBCE0",
+      "ingredients":[
+         {
+            "ingredient":"espresso",
+            "qty":"1 shot",
+            "color":"#9B5E50",
+            "height":"40%"
+         },
+         {
+            "ingredient":"Lavender syrup",
+            "qty":"1 shot",
+            "color":"#ADBCE0",
+            "height":"50%"
+         },
+         {
+            "ingredient":"milk of your choice",
+            "qty":"8 oz"
+         },
+         {
+            "ingredient":"mocha powder or chocolate",
+            "qty":"2 tsp",
+            "color":"#CC7266",
+            "height":"70%"
+         },
+         {
+            "ingredient":"whipped cream",
+            "qty":"~"
+         }
+      ],
+     "steps":[
+         {
+            "step":"Pull espresso shot in your cup"
+         },
+         {
+            "step":"Add Lavender syrup to espresso"
+         },
+         {
+            "step":"Steam milk"
+         },
+         {
+            "step":"Add the mocha or chocolate powder to your espresso"
+         },
+         {
+            "step":"Mix well until fully combined"
+         },
+         {
+            "step":"Pour milk into espresso and powder mixure and stir"
+         },
+         {
+            "step":"Top with whipped cream and enjoy!"
+         }
+      ],
+      "drinkImg":"Artboard 4.svg",
+      "drinkHistory":"A caffe mocha, also called mocaccino, is a chocolate-flavored variant of a caffe latte. Like a caffe latte, caffe mocha is based on espresso and hot milk, but with added chocolate, typically in the form of sweet cocoa powder, although many varieties use chocolate syrup. Mochas can contain dark or milk chocolate. Caffe mochas typically contain the distinctive milk froth on top, although, as is common with hot chocolate, they are sometimes served with whipped cream instead. They are usually topped with a dusting of either cinnamon or cocoa powder, and marshmallows may also be added on top for flavor and decoration."
+   },
+   {
+      "drinkName":"Smore’s Latte",
+      "drinkCategory":"Flavored Drinks",
+      "drinkBgrColor":"#E8E6E7",
+      "ingredients":[
+         {
+            "ingredient":"espresso",
+            "qty":"1 shot",
+            "color":"#9B5E50",
+            "height":"45%"
+         },
+         {
+            "ingredient":"Smore’s Syrup",
+            "qty":"1 shot",
+            "color":"#E8E6E7",
+            "height":"55%"
+         },
+         {
+            "ingredient":"foam milk of your choice",
+            "qty":"8 oz",
+            "color":"#A3E6EF",
+            "height":"70%"
+         },
+         {
+            "ingredient":"whipped cream",
+            "qty":"~"
+         },
+         {
+            "ingredient":"ground graham crackers",
+            "qty":"1 dash"
+         }
+      ],
+      "steps":[
+         {
+            "step":"Pull espresso shot in your latte cup"
+         },
+         {
+            "step":"Pour Smore’s syrup in cup with espresso"
+         },
+         {
+            "step":"Using a spoon to retain the microbubbles on top of the steamed milk, pour the milk into latte cup"
+         },
+         {
+            "step":"Top Latte with the retained foam and crushed graham cracker crumbles. Sweeten if desired"
+         }
+      ],
+      "drinkImg":"Artboard 2.svg",
+      "drinkHistory":"A latte is a coffee drink made with espresso and steamed milk. The term as used in English is a shortened form of the Italian caffe latte, caffelatte or caffellatte, which means milk coffee. The word is also sometimes spelled latte or latte in English with different kinds of accent marks, which can be a hyperforeignism or a deliberate attempt to indicate that the word is not pronounced according to the rules of English orthography. Variants include replacing the coffee with another drink base such as masala chai (spiced Indian tea), mate or matcha, and other types of milk, such as soy milk or almond milk are also used."
    }
 ]
