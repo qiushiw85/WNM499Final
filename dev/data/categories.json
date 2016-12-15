@@ -8,7 +8,16 @@
     "categoryDes": "Our strongest recommendations for strongest drinkers"
   },
   {
+<<<<<<< HEAD
     "categoryName": "Bright",
     "categoryDes": "Blah blah blah"
+=======
+    "categoryName": "Creamy",
+    "categoryDes": "Creamy and frothy goodness"
+  },
+  {
+    "categoryName": "Flavored Drinks",
+    "categoryDes": "Enjoy your coffee with the seasons"
+>>>>>>> 489d62239e829618e0bffc54a96e92ae495015c1
   }
 ]

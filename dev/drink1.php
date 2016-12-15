@@ -11,6 +11,7 @@
 <body style="background-color:rgb(20,20,20)">
   <div class="card-container" style="background-color:#F69D9D">
     <div class="card-name">Macchiato</div>
+<<<<<<< HEAD
     <div class="ingredients-container">
       <ul class="ingredients-list">
         <li>1 tsp VANILLA SYRUP</li>
@@ -30,6 +31,33 @@
     </div>
     <div class="card-img">
       <img src="images/coffeesvgs/Artboard 2.svg" alt="" />
+=======
+    <div class="row">
+      <div class="col-md-7">
+        <div class="ingredients-container">
+          <ul class="ingredients-list">
+            <li>1 tsp VANILLA SYRUP</li>
+            <li>1 shot ESPRESSO</li>
+            <li>160 ml YOUR CHOICE OF MILK</li>
+            <li>CARAMEL SAUCE</li>
+          </ul>
+        </div>
+        <div class="steps-container">
+          <ul class="steps-list">
+            <li>Warm a serving cup</li>
+            <li>Add one tablespoon of vanilla syrup in the cup</li>
+            <li>Froth one cup of milk, and add the hot milk and  milk foam in</li>
+            <li>Pour in one shot of espresso</li>
+            <li>Drizzling caramel sauce on top and serve</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="card-img">
+          <img src="images/coffeesvgs/Artboard 2.svg" alt="" />
+        </div>
+      </div>
+>>>>>>> 489d62239e829618e0bffc54a96e92ae495015c1
     </div>
   </div>
 </body>

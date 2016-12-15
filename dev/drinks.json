@@ -1,0 +1,276 @@
+[
+  {
+    "drinkName":"Macchiato",
+    "drinkCategory":"American Classics",
+    "drinkBgrColor":"#FDDBBD",
+    "ingredients": [
+      {"ingredient": "vanilla syrup", "qty":"1 tsp"},
+      {"ingredient": "espresso", "qty":"1 shot"},
+      {"ingredient": "your choice of milk", "qty":"160 ml"},
+      {"ingredient": "caramel sauce"}
+    ],
+    "steps": [
+      {"step": "Warm a serving cup"},
+      {"step": "Add one tablespoon of vanilla syrup in the cup"},
+      {"step": "Froth one cup of milk, and add the hot milk and  milk foam in"},
+      {"step": "Pour in one shot of espresso"},
+      {"step": "Drizzling caramel sauce on top and serve"}
+    ],
+    "drinkImg":"Artboard 1.svg",
+    "drinkHistory":""
+  },
+  {
+    "drinkName":"Latte",
+    "drinkCategory":"American Classics",
+    "drinkBgrColor":"#FDDBBD",
+    "ingredients": [
+      {"ingredient": "espresso", "qty":"1 shot"},
+      {"ingredient": "foam milk of your choice", "qty":"8 oz"},
+      {"ingredient": "caramel sauce"}
+    ],
+    "steps": [
+      {"step": "Pull espresso shot in your latte cup"},
+      {"step": "Using a spoon to retain the microbubbles on top of the steamed milk, pour the milk into latte cup"},
+      {"step": "Top Latte with the retained foam and sweeten if desired"}
+    ],
+    "drinkImg":"Artboard 2.svg"
+  },
+  {
+    "drinkName":"Cappuccino",
+    "drinkCategory":"Dark Burst",
+    "drinkBgrColor":"#C9A89F",
+    "ingredients": [
+      {"ingredient": "espresso", "qty":"1 shot"},
+      {"ingredient": "foam milk of your choice", "qty":"4 oz"}
+    ],
+    "steps": [
+      {"step": "Pull espresso shot in your cup"},
+      {"step": "Froth milk of choice until you get a lot of foam"},
+      {"step": "Top espresso with half milk, half foam"}
+    ],
+    "drinkImg":"Artboard 3.svg"
+  },
+  {
+    "drinkName":"Mocha",
+    "drinkCategory":"Dark Burst",
+    "drinkBgrColor":"#FFFFFF",
+    "ingredients": [
+      {"ingredient": "espresso", "qty":"1 shot"},
+      {"ingredient": "milk of your choice", "qty":"8 oz"},
+      {"ingredient": "mocha powder or chocolate", "qty":"2 tsp"},
+      {"ingredient": "whipped cream"}
+    ],
+    "steps": [
+      {"step": "Pull espresso shot in your cup"},
+      {"step": "Steam milk"},
+      {"step": "Add the mocha or chocolate powder to your espresso"},
+      {"step": "Mix well until fully combined"},
+      {"step": "Pour milk into espresso and powder mixure and stir"},
+      {"step": "Top with whipped cream and enjoy!"}
+    ],
+    "drinkImg":"Artboard 4.svg"
+  },
+  {
+    "drinkName":"Affogato",
+    "drinkCategory":"American Classics",
+    "drinkBgrColor":"#FFF1B6",
+    "ingredients": [
+      {"ingredient": "espresso", "qty":"2 shots"},
+      {"ingredient": "vanilla ice cream"}
+    ],
+    "steps": [
+      {"step": "Scoop ice cream into a cup of your choice"},
+      {"step": "Pull espresso shots into your cup over the ice cream"},
+      {"step": "Top with whipped cream and enjoy!"}
+    ],
+    "drinkImg":"Artboard 5.svg"
+  },
+  {
+    "drinkName":"Espresso",
+    "drinkCategory":"American Classics",
+    "drinkBgrColor":"#FFF8D2",
+    "ingredients": [
+      {"ingredient": "espresso", "qty":"1 shot"}
+    ],
+    "steps": [
+      {"step": "Pull espresso shots into your latte cup"},
+      {"step": "You can add cream or milk of your choice along with sweetener or you can drink the shots straight"}
+    ],
+    "drinkImg":"Artboard 6.svg"
+  },
+  {
+    "drinkName":"Americano",
+    "drinkCategory":"American Classics",
+    "drinkBgrColor":"#B6DAA4",
+    "ingredients": [
+      {"ingredient": "espresso", "qty":"1 shot"},
+      {"ingredient": "water", "qty":"8 oz"}
+    ],
+    "steps": [
+      {"step": "Pull espresso shots into your latte cup"},
+      {"step": "Add Water to espresso shot filling either to the top of the cup or fill up to 75% if yu want to add anything else"},
+      {"step": "You can add cream or milk of your choice along with sweetener"}
+    ],
+    "drinkImg":"Artboard 7.svg"
+  },
+  {
+    "drinkName":"Doppio",
+    "drinkCategory":"American Classics",
+    "drinkBgrColor":"#E1B973",
+    "ingredients": [
+      {"ingredient": "espresso", "qty":"2 shots"},
+      {"ingredient": "cream (optional)", "qty":"2 oz"}
+    ],
+    "steps": [
+      {"step": "Pull espresso shots"},
+      {"step": "You can add cream or milk of your choice along with sweetener or you can drink the shots straight"}
+    ],
+    "drinkImg":"Artboard 8.svg"
+  },
+  {
+    "drinkName":"Irish Coffee",
+    "drinkCategory":"American Classics",
+    "drinkBgrColor":"#F3F1AC",
+    "ingredients": [
+      {"ingredient": "1 shot of espresso and water", "qty":"1 cup"},
+      {"ingredient": "Irish whiskey", "qty":"1 jigger"},
+      {"ingredient": "Irish cream", "qty":"1 jigger"},
+      {"ingredient": "ground nutmeg", "qty":"1 dash"},
+      {"ingredient": "whipped cream"}
+    ],
+    "steps": [
+      {"step": "In a coffee mug, combine Irish cream and Irish whiskey"},
+      {"step": "Fill mug with coffee. Top with a dab of whipped cream and a dash of nutmeg"}
+    ],
+    "drinkImg":"Artboard 9.svg"
+  },
+  {
+    "drinkName":"Red Eye",
+    "drinkCategory":"Dark Burst",
+    "drinkBgrColor":"#AD8B6F",
+    "ingredients": [
+      {"ingredient": "espresso", "qty":"1 shot"},
+      {"ingredient": "regular brewed coffee", "qty":"8 oz"}
+    ],
+    "steps": [
+      {"step": "Pour yourself a cup of regular brewed coffee"},
+      {"step": "Add one shot of espresso to brewed coffee"}
+    ],
+    "drinkImg":"Artboard 10.svg"
+  },
+  {
+    "drinkName":"French press",
+    "drinkCategory":"American Classics",
+    "drinkBgrColor":"#F3F1AC",
+    "ingredients": [
+      {"ingredient": "1/2 cup freshly-roasted coffee beans
+", "qty":"1/2 cup"},
+      {"ingredient": "Water", "qty":"4 cups"},
+      {"ingredient": "Milk if desired", "qty":"2 jigger"},
+    ],
+    "steps": [
+      {"step": "Measure out 1/2 cup coffee beans"},
+      {"step": "Grind the beans"}
+      {"step": "Measure 4 cups water Water for French press coffee should 
+be heated to 195°F. This is below boiling, which is 212°F at 
+sea level. Heat the water in a stovetop or electric kettle to 
+boiling, then take off the heat for about 1 full minute before 
+making the coffee. If you want to make extra-sure it's the 
+right temperature, use a thermometer to check."},
+      {"step": "Add the full 4 cups of hot water to the French press."}
+      {"step": "Measure out 1/2 cup coffee beans"},
+      {"step": "Stir vigorously, using an up and down motion."}
+      {"step": "Steep for 4 minutes: Four minutes will produce a robust 
+brew. If you want to tweak your French press as you learn 
+its nuances, you may find that different roasts of coffee 
+do better with slightly longer or shorter steeping times.."},
+      {"step": "Plunge the press: When the timer goes off, immediately 
+press the plunger all the way to the bottom. 
+Drink the coffee immediately."}
+{"step": "You can add cream or milk of your choice along with
+sweetner or you can drink the shots straight. "}
+    ],
+    "drinkImg":"Artboard 11.svg"
+  },
+  {
+    "drinkName":"Vietnamese",
+    "drinkCategory":"American Classics",
+    "drinkBgrColor":"#F3F1AC",
+    "ingredients": [
+      {"ingredient": "1 heaping tablespoon (about 4 teaspoons) of Cafe Du 
+Monde or Trung Nguyen grind 1-2 teaspoons condensed", "qty":"1 heaping tablespoon"},
+      {"ingredient": "milk to fit your taste", "qty":"3 jigger"},
+      {"ingredient": "Vietnamese coffee filter
+", "qty":"1 filter"},
+      {"ingredient": "condensed milk (any brand, really) 
+", "qty":"3 tablespoons"},
+{"ingredient": "a glass for the brew
+", "qty":"1 glass"},
+      {"ingredient": "a second glass filled with ice
+"}
+    ],
+    "steps": [
+      {"step": "Start by boiling some water."},
+      {"step": "Remove the metal filter and pour in 1 heaping tablespoon 
+of Cafe Du Monde (about 4 teaspoons)"}
+       {"step": "Twist the filter on gently until it just starts to stop. 
+Then turn it little more, a bit less than a turn."},
+      {"step": "If you wanted to drink this hot instead, you can put the
+brewing cup in a bowl and fill the bowl with hot water.
+For this recipe, we're going to stick with the iced version."}
+       {"step": "Remove the metal filter and pour in 1 heaping tablespoon 
+of Cafe Du Monde (about 4 teaspoons)"},
+      {"step": "Ideally you want to add the condensed milk to the cup 
+before brewing because the boiling water actually cooks 
+it. It does have a slight affect on the flavor. For this recipe 
+we'll add it after since most readers probably don't know 
+how much condensed milk they want.
+"}
+       {"step": "To brew, pour a tiny bit of water in the filter just to wet
+the grind and to let the grind expand a bit. Also this will
+help rid of some small grinds that happen to make it 
+through the filter. You can toss it out if you see any."},
+      {"step": "Then go ahead and fill the filter all the way and let it drip. 
+Ideal brewing time comes to about 3 to 5 minutes so adjust 
+the filter accordingly. Too loose and you'll just have runny 
+brown water. Too tight and nothing will drip through.  
+Place the cap on and watch the coffee drip! Add condensed 
+milk and enjoy!"}
+    ],
+    "drinkImg":"Artboard 12.svg"
+  },
+  {
+    "drinkName":"Bone Dry",
+    "drinkCategory":"Bright",
+    "drinkBgrColor":"#F3F1AC",
+    "ingredients": [
+      {"ingredient": "2 shots of espresso", "qty":"2 shot"},
+      {"ingredient": "Milk of your choice", "qty":"1 cup"},
+      
+    ],
+    "steps": [
+      {"step": "Pull two shots of espresso"},
+      {"step": "froth milk until foamy"}
+      {"step": "Pour shots in a cup"},
+      {"step": "Pour only the foam into the cup"}
+      {"step": "Enjoy!"}
+    ],
+    "drinkImg":"Artboard 13.svg"
+  },
+  {
+    "drinkName":"To-go cup",
+    "drinkCategory":"American Classics",
+    "drinkBgrColor":"#F3F1AC",
+    "ingredients": [
+      {"ingredient": "2 shots of espresso", "qty":"2 shots"},
+      {"ingredient": "water", "qty":"1 cup"},
+      {"ingredient": "Milk of your choice to top", "qty":"1 jigger"},
+     
+    ],
+    "steps": [
+      {"step": "Measure ingredients to your liking in your to go cup. Possibilties are endless."},
+    ],
+    "drinkImg":"Artboard 14.svg"
+  }
+]
+

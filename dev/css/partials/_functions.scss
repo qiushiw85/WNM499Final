@@ -40,9 +40,9 @@
     position: relative;
     @include center-child;
     @if ($prefix=='xl'){
-      width:map-get($breakpoints,$prefix);
+      max-width:map-get($breakpoints,$prefix);
     } @else if ($prefix=='lg'){
-        width:map-get($breakpoints,$prefix);
+        max-width:map-get($breakpoints,$prefix);
     } @else {
         width: auto;
         padding-left: 1.25rem;
